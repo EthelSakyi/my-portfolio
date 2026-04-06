@@ -28,6 +28,7 @@ export default function Navbar() {
         <div className="flex items-center gap-8 text-sm text-black/70 dark:text-white/70">
           <Link href="/about" className="hover:opacity-100 opacity-80">About</Link>
           <Link href="/resume" className="hover:opacity-100 opacity-80">Resume</Link>
+          <Link href="/research" className="hover:opacity-100 opacity-80">Research</Link>
           <Link href="/contact" className="hover:opacity-100 opacity-80">Contact</Link>
         </div>
       </nav>

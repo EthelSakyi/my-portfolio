@@ -34,11 +34,11 @@ export default function Hero() {
             <span className="text-neutral-500 dark:text-neutral-400">See what I&apos;ve been building.</span>
           </h2>
 
-          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-10 flex gap-6 overflow-x-auto snap-x snap-mandatory pb-4">
             {/* ===================== R3 CARD ===================== */}
             <Link
               href="/work/r3"
-              className="relative h-[500px] rounded-[28px] overflow-hidden bg-black text-white ring-1 ring-black/10 shadow-[0_8px_30px_rgba(0,0,0,0.10)] transition-transform duration-500 hover:-translate-y-1"
+              className="relative snap-start shrink-0 w-[320px] sm:w-[380px] md:w-[440px] h-[500px] rounded-[28px] overflow-hidden bg-black text-white ring-1 ring-black/10 shadow-[0_8px_30px_rgba(0,0,0,0.10)] transition-transform duration-500 hover:-translate-y-1"
             >
               {/* (No background image/pattern) */}
               <div className="relative z-10 p-8 md:p-10">
@@ -61,7 +61,7 @@ export default function Hero() {
             {/* ===================== CAREGIVER CARD ===================== */}
             <Link
               href="/work/caregiver"
-              className="relative h-[500px] rounded-[28px] overflow-hidden bg-white text-black ring-1 ring-black/5 dark:bg-neutral-900 dark:text-white dark:ring-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-transform duration-500 hover:-translate-y-1"
+              className="relative snap-start shrink-0 w-[320px] sm:w-[380px] md:w-[440px] h-[500px] rounded-[28px] overflow-hidden bg-white text-black ring-1 ring-black/5 dark:bg-neutral-900 dark:text-white dark:ring-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-transform duration-500 hover:-translate-y-1"
             >
               <div className="relative z-10 p-8 md:p-10">
                 <h3 className="text-3xl font-semibold">Caregiver Mental Wellness</h3>
@@ -86,7 +86,7 @@ export default function Hero() {
             {/* ===================== PARKING VALIDATION CARD ===================== */}
             <Link
               href="/work/parking"
-              className="relative h-[500px] rounded-[28px] overflow-hidden bg-white text-black ring-1 ring-black/5 dark:bg-neutral-900 dark:text-white dark:ring-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-transform duration-500 hover:-translate-y-1"
+              className="relative snap-start shrink-0 w-[320px] sm:w-[380px] md:w-[440px] h-[500px] rounded-[28px] overflow-hidden bg-white text-black ring-1 ring-black/5 dark:bg-neutral-900 dark:text-white dark:ring-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-transform duration-500 hover:-translate-y-1"
             >
               <div className="relative z-10 p-8 md:p-10">
                 <h3 className="text-3xl font-semibold">Parking Validation & Enforcement App</h3>
@@ -105,6 +105,19 @@ export default function Hero() {
                   className="object-contain object-right-bottom"
                   priority
                 />
+              </div>
+            </Link>
+
+            {/* ===================== RESEARCH CARD ===================== */}
+            <Link
+              href="/research"
+              className="relative snap-start shrink-0 w-[320px] sm:w-[380px] md:w-[440px] h-[500px] rounded-[28px] overflow-hidden bg-black text-white ring-1 ring-black/10 shadow-[0_8px_30px_rgba(0,0,0,0.10)] transition-transform duration-500 hover:-translate-y-1"
+            >
+              <div className="relative z-10 p-8 md:p-10">
+                <h3 className="text-3xl font-semibold">Research</h3>
+                <p className="mt-3 text-base text-white/85">
+                  AI governance, post-quantum cryptography, and technology policy.
+                </p>
               </div>
             </Link>
           </div>
