@@ -49,11 +49,11 @@ export default function Page() {
                   Email
                 </div>
                 <a
-                  href="mailto:etsakyi@outlook.com"
+                  href="mailto:ethelasakyi@gmail.com"
                   className="mt-1 inline-flex items-center gap-2 text-base md:text-lg underline underline-offset-4 hover:opacity-80"
                 >
                   {/* Mail icon */}
-                  etsakyi@outlook.com
+                  ethelasakyi@gmail.com
                 </a>
               </div>
 

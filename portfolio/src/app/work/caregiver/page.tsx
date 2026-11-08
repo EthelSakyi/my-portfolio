@@ -304,6 +304,8 @@ const TECH = [
   'GitHub',
   'Docker (local dev)',
   'Visily',
+  'OpenAI API',
+  'RAG',
 ];
 
 const WIREFRAMES: CarouselItem[] = [
@@ -353,22 +355,24 @@ const COPY: Record<Persona, { overview: string; valueProp: string; impactBullets
     overview:
       'Caregiver Mental Wellness, Inc. was managing programs, donations, and social media reporting using shared Excel spreadsheets. As the dataset grew, this created frequent data-entry errors, inconsistent fields, and a painful workflow for generating stakeholder reports.',
     valueProp:
-      'I helped design and build a unified desktop reporting platform that centralized organizational data, enforced validation and role-based access, and enabled repeatable report generation with exports to PDF, Word, and Excel.',
+      'I helped design and build a unified desktop reporting platform that centralized organizational data, enforced validation and role-based access, and enabled repeatable report generation with exports to PDF, Word, and Excel. I also built a staff-facing AI chatbot using the OpenAI API, retrieval-augmented generation (RAG), and prompt engineering with human-in-the-loop review.',
     impactBullets: [
       'Reduced field inconsistency by moving from freeform spreadsheet inputs to validated forms and normalized data structures.',
       'Improved collaboration by replacing shared spreadsheets with role-based access and auditable edits.',
       'Streamlined reporting by supporting structured exports (PDF/Word/Excel) from a consistent data model.',
+      'AI chatbot (OpenAI API + RAG, human-in-the-loop) reduced new-hire onboarding from multiple days to one day.',
     ],
   },
   Product: {
     overview:
       'The organization relied on shared Excel files to track operations and prepare stakeholder updates. The approach didn’t scale: teams fought the same sheets, fields drifted, and reporting became slow and error-prone.',
     valueProp:
-      'We proposed and delivered a desktop reporting system that made reporting reliable: standardized inputs, clear permissions, and repeatable exports so leadership could trust the numbers.',
+      'We proposed and delivered a desktop reporting system that made reporting reliable: standardized inputs, clear permissions, and repeatable exports so leadership could trust the numbers. As part of the same engagement, a staff-facing AI chatbot was built using the OpenAI API and retrieval-augmented generation to accelerate onboarding.',
     impactBullets: [
       'Created a single place to track operational activity instead of scattered spreadsheets.',
       'Introduced clear roles and permissions so teams could collaborate without overwriting each other.',
       'Made reporting repeatable by standardizing data capture and offering consistent exports.',
+      'AI chatbot with human-in-the-loop review cut new-hire onboarding from multiple days to one day.',
     ],
   },
 };

@@ -66,10 +66,9 @@ function ResearchCard({
 const RESEARCH = [
   {
     title: 'Governing the Co-Evolution of Artificial Intelligence and Post-Quantum Cryptography',
-    type: 'Fellowship Proposal',
-    context: 'Berkman Klein Center for Internet and Society, Harvard University',
-    status: 'Under Active Review, September 2026 Cohort',
-    date: 'November 2025',
+    type: 'Independent Research Proposal',
+    context: 'Submitted as part of a fellowship application to the Berkman Klein Center for Internet & Society, Harvard University · November 2025',
+    date: '',
     description:
       'A research proposal examining how AI and post-quantum cryptography must evolve together under coordinated governance frameworks. Analyzes the dual-use risk of AI accelerating cryptanalysis while strengthening cryptographic defenses, and proposes a Governance Framework for Secure Co-Evolution drawing on NIST PQC standards, the EU AI Act, and OECD frameworks.',
     pdf: '/EthelSakyi-ProjectProposalBKC.pdf',
@@ -126,9 +125,7 @@ export default function ResearchPage() {
             I study the intersection of artificial intelligence, post-quantum cryptography, and
             technology governance. My research spans the mathematical foundations of
             quantum-resistant cryptography, implementation challenges, and the policy frameworks
-            needed to govern these technologies responsibly. I am currently a fellowship applicant
-            under active review at the Berkman Klein Center for Internet and Society at Harvard
-            University for the September 2026 cohort.
+            needed to govern these technologies responsibly.
           </p>
         </div>
       </section>

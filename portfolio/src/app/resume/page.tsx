@@ -19,7 +19,7 @@ export default function Resume() {
             Connect on LinkedIn
           </a>
           <a
-            href="mailto:ethelsakyi@outlook.com"
+            href="mailto:ethelasakyi@gmail.com"
             className="px-5 py-3 rounded-2xl border border-black/15 text-sm text-neutral-800 hover:bg-black/5 transition"
           >
             Send an Email

@@ -284,9 +284,9 @@ export default function R3Page() {
             sub="agree once, reuse forever"
           />
           <KPI
-            label="Operational load"
-            value="As-needed reviews"
-            sub="no standing meetings"
+            label="Manual reporting"
+            value="~90% reduction"
+            sub="Python pipeline and automated dashboards"
           />
           <KPI
             label="Auditability"
@@ -316,7 +316,7 @@ export default function R3Page() {
                   Designed the data model spanning Jira DC (JQL), Xray, Jenkins, and Grafana → a PostgreSQL schema.
                 </li>
                 <li>
-                  Built the aggregation layer using FastAPI and Python, deployed as containerized services with clear error and empty-state handling.
+                  Built the aggregation layer using FastAPI and Python, deployed as containerized services — reducing manual reporting by approximately 90%.
                 </li>
                 <li>
                   Led dashboard UX for at-a-glance status, triage views, and drill-downs, progressing from

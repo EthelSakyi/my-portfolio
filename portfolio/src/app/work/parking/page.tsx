@@ -275,8 +275,8 @@ function BarcodeAccordion() {
           </p>
           <ul className="mt-3 list-disc pl-5 space-y-2">
             <li>
-              Removes repetitive manual typing and reduces “missed or wrong plate”
-              issues.
+              Eliminates the dependency on the third-party provider for pass
+              generation and reduces missed or incorrect records.
             </li>
             <li>
               Produces two passes per arriving reservation and stores a record
@@ -291,13 +291,13 @@ function BarcodeAccordion() {
       body: (
         <>
           <p>
-            This replaced a high-friction process with a consistent workflow that
-            front desk and towing could both trust.
+            This replaced a failing third-party service with a consistent
+            workflow that front desk, towing, and night audit could all trust.
           </p>
           <ul className="mt-3 list-disc pl-5 space-y-2">
-            <li>Less front desk time spent on pen-and-paper passes.</li>
-            <li>Fewer disputes because validation is auditable.</li>
-            <li>Clear expiration prevents outdated passes from circulating.</li>
+            <li>Built and deployed in eight hours during an active enforcement emergency.</li>
+            <li>Fewer disputes because every registration and validation is auditable.</li>
+            <li>Clear expiration and automatic record removal keep the system clean.</li>
           </ul>
         </>
       ),
@@ -322,7 +322,7 @@ function BarcodeAccordion() {
 
 const STACK = [
   'Python',
-  'Flask / Web Service',
+  'FastAPI',
   'PDF parsing',
   'ReportLab (PDF generation and barcodes)',
   'python-barcode (barcode generation option)',
@@ -357,8 +357,9 @@ export default function ParkingPage() {
         </div>
 
         <p className="mt-3 text-neutral-600 dark:text-neutral-300 text-lg max-w-3xl">
-          Automating parking registration, pass printing, and scan-based
-          verification for front desk and towing operations.
+          Built in an eight-hour emergency response after the hotel&apos;s existing
+          third-party parking system failed — deployed the same day and permanently
+          adopted over the previous provider.
         </p>
       </section>
 
@@ -366,7 +367,7 @@ export default function ParkingPage() {
       <Section
         title="Overview"
         id="overview"
-        subtitle="I built an MVP that replaced pen-and-paper passes with a structured system that prints scannable parking passes and verifies them in seconds."
+        subtitle="Designed, built, and deployed end-to-end in eight hours after a 5 a.m. emergency call. The system went live the same day — and the hotel permanently adopted it over the original third-party provider."
       >
         <div className="grid gap-6 md:grid-cols-12">
           <div className="md:col-span-7 space-y-4">
@@ -376,14 +377,18 @@ export default function ParkingPage() {
               </h3>
               <ul className="list-disc pl-5 text-sm text-neutral-700 dark:text-neutral-300 space-y-1">
                 <li>
-                  Front desk relied on manual passes (pen-and-paper) and ad-hoc
-                  validation.
+                  The hotel&apos;s existing third-party parking system failed at
+                  approximately 5 a.m. with municipal parking enforcement on-site
+                  and guest vehicles at risk of being towed.
                 </li>
                 <li>
-                  Limited traceability when towing needed to confirm guest
-                  registration.
+                  No working system to generate passes, validate guest vehicles at
+                  check-in, or produce reports for enforcement and night audit.
                 </li>
-                <li>High operational overhead on busy arrival days.</li>
+                <li>
+                  The property management system was intermittently unavailable,
+                  requiring a fallback method for arrival-list processing.
+                </li>
               </ul>
 
               <h3 className="mt-4 text-sm font-semibold uppercase tracking-wide text-neutral-500 dark:text-neutral-400 mb-2">
@@ -391,16 +396,18 @@ export default function ParkingPage() {
               </h3>
               <ul className="list-disc pl-5 text-sm text-neutral-700 dark:text-neutral-300 space-y-1">
                 <li>
-                  Upload the daily arrival list once and generate two printed
-                  passes per arriving guest.
+                  Processed guest arrival lists to generate parking passes;
+                  supported PDF uploads as a fallback when the property management
+                  system was unavailable.
                 </li>
                 <li>
-                  Register vehicles to the guest profile and attach expiration
-                  logic.
+                  Allowed front-desk staff to validate guest parking at check-in,
+                  print passes, and generate vehicle-registration reports for
+                  municipal enforcement and night audit.
                 </li>
                 <li>
-                  Let towing scan a barcode to confirm registration and expiry
-                  instantly.
+                  Automatically removed guest records after departure dates;
+                  barcodes enabled instant scan-based validation for towing.
                 </li>
               </ul>
             </div>
@@ -409,16 +416,19 @@ export default function ParkingPage() {
               <h3 className="text-base font-semibold">My Role</h3>
               <ul className="mt-3 space-y-2 list-disc pl-5 text-neutral-700 dark:text-neutral-300">
                 <li>
-                  Designed the workflow and UI to match real front desk timing
-                  and constraints.
+                  Responded to a 5 a.m. emergency call as a Guest Services
+                  Associate; arrived on-site and independently designed, built,
+                  and deployed a working replacement within eight hours.
                 </li>
                 <li>
-                  Built the MVP end-to-end and shipped it as a hosted service
-                  used by the hotel.
+                  Owned the system end-to-end: arrival-list processing, pass
+                  generation, check-in validation, enforcement reporting,
+                  night-audit reports, and automatic record removal after departure.
                 </li>
                 <li>
-                  Optimized for reliability and clarity so non-technical staff
-                  could operate it confidently.
+                  Deployed as a hosted service; the hotel permanently adopted it
+                  over the original third-party provider — the manager confirmed
+                  the hotel no longer needed to pay for the previous service.
                 </li>
               </ul>
             </div>
@@ -451,21 +461,21 @@ export default function ParkingPage() {
       <Section title="Impact" id="impact">
         <div className="grid gap-4 md:grid-cols-3">
           <KPI
-            label="Front desk workflow"
-            value="No more pen-and-paper"
-            sub="passes are generated from arrivals"
+            label="Emergency turnaround"
+            value="8 hours"
+            sub="designed, built, and deployed the same day"
             variant="dark"
           />
           <KPI
             label="Verification"
             value="Scan to validate"
-            sub="clear valid, expired, or not found"
+            sub="valid, expired, or not found"
             variant="dark"
           />
           <KPI
-            label="Operational trust"
-            value="Auditable records"
-            sub="registration tied to a system record"
+            label="Permanent adoption"
+            value="Replaced third-party"
+            sub="hotel discontinued the previous paid provider"
             variant="dark"
           />
         </div>
@@ -525,10 +535,9 @@ export default function ParkingPage() {
             <div className="mt-5 rounded-2xl border border-black/5 dark:border-white/10 bg-white dark:bg-neutral-900 p-5">
               <h3 className="text-base font-semibold">MVP outcome</h3>
               <p className="mt-2 text-neutral-700 dark:text-neutral-300 leading-relaxed">
-                The MVP worked well operationally, and the team adopted it
-                instead of returning to manual passes. The workflow reduced
-                overhead for front desk and gave towing a reliable way to verify
-                registration and expiration.
+                The system worked in production on day one and the hotel permanently
+                adopted it over the original third-party provider. The manager
+                confirmed the hotel no longer needed to pay for the previous service.
               </p>
             </div>
           </div>
